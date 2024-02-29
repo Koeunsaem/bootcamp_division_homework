@@ -5,8 +5,22 @@
 
 #include <stdio.h>
 
-int main() {
-    // 이곳에 코드를 작성해주세요!
+int main()
+{
+
+    int score = 0;
+
+    scanf("%d", &score);
+    if (score > 89)
+        printf("A");
+    else if (score > 79)
+        printf("B");
+    else if (score > 69)
+        printf("C");
+    else if (score > 59)
+        printf("D");
+    else
+        printf("F");
 
     return 0;
 }

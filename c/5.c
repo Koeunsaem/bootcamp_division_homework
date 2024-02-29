@@ -5,8 +5,18 @@
 
 #include <stdio.h>
 
-int main() {
-    // 이곳에 코드를 작성해주세요!
+int main()
+{
+    int age = 0;
+    int h = 0;
+
+    scanf("%d", &age);
+    scanf("%d", &h);
+
+    if ((age < 13) && (h < 160))
+        printf("O");
+    else
+        printf("X");
 
     return 0;
 }

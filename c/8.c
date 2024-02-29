@@ -5,8 +5,23 @@
 
 #include <stdio.h>
 
-int main() {
-    // 이곳에 코드를 작성해주세요!
+int main()
+{
+    int num;
+    int sum = 0, ftr = 1;
+
+    scanf("%d", &num);
+
+    for (int i = 1; i < (num + 1); i++)
+        sum += i;
+    printf("%d\n", sum);
+
+    for (int i = 2; i <= num; i++)
+    {
+        ftr *= i;
+    }
+
+    printf("%d", ftr);
 
     return 0;
 }

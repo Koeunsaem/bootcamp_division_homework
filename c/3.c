@@ -5,8 +5,15 @@
 
 #include <stdio.h>
 
-int main() {
-    // 이곳에 코드를 작성해주세요!
+int main()
+{
+    int input = 0;
+
+    scanf("%d", &input);
+    if (input < 12)
+        printf("AM");
+    else
+        printf("PM");
 
     return 0;
 }

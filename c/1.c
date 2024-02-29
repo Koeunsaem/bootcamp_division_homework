@@ -5,8 +5,17 @@
 
 #include <stdio.h>
 
-int main() {
-    // 이곳에 코드를 작성해주세요!
+int main()
+{
+    int num;
+
+    scanf("%d", &num);
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("%d", num % 10);
+        num = num / 10;
+    }
 
     return 0;
 }
